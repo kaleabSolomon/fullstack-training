@@ -12,27 +12,54 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;0,800;1,100;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a class="name" href="#">Kaleab Solomon</a>
+      </div>
+      <div class="navbar-right">
+        <a class="nav-btn" href="#introduction">Home</a>
+        <a class="nav-btn" href="#about-me">About Me</a>
+        <a class="nav-btn" href="#contact-me">Contact</a>
+      </div>
+    </nav>
     <section id="introduction">
       <div class="portfolio">
         <img src="img/portfolio.jpg" alt="Your portfolio image" />
       </div>
       <div class="information">
-        <h1>Hi, There👋</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis
-          ante sed mauris aliquam fermentum vel eget magna. Nam id pretium urna.
-          Sed euismod nibh quis magna bibendum, ac pharetra ex tristique. Donec
-          ut semper augue.
+        <div class="attributes">
+          <p class="att">
+            Aspiring Software Engineer | Detail-Oriented | Dreamer | Minimalist
+          </p>
+          <!-- <span class="cursor">_</span> -->
+        </div>
+
+        <h1 class="greeting">Hi,There👋</h1>
+        <p class="description">
+          My name is Kaleab Solomon and I'm a 21-year-old software engineering
+          student and tech enthusiast from Ethiopia. I love working on the back
+          end of projects and am fluent in JavaScript, with a particular
+          interest in Node.js. I'm a hard worker who pays close attention to
+          details and likes to get creative with my work. I've done some full
+          stack development work in the past, but I'm always looking for new
+          challenges to help me grow my skills even further.
         </p>
         <div class="btns">
           <a href="#about-me" class="aboutBtn">Learn more</a>
-          <a href="$contact-me" class="contactBtn">Contact me</a>
+          <a href="#contact-me" class="contactBtn">Contact me</a>
         </div>
       </div>
     </section>
     <section id="about-me">Section 2</section>
     <section id="contact-me">Section 3</section>
   </body>
+  <script src="script.js"></script>
 </html>
