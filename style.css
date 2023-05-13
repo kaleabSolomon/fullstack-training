@@ -57,20 +57,18 @@
 }
 
 section {
-  height: 100vh;
+  height: 33.33%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
   font-size: 1rem;
   color: white;
-  gap: 4rem;
 }
 
 section:nth-child(odd) {
   background: linear-gradient(
     90deg,
-    rgb(109, 163, 238) 0%,
-    rgb(148, 234, 250) 100%
+    rgba(15, 53, 164, 1) 0%,
+    rgba(7, 181, 227, 1) 100%
   );
 }
 
@@ -109,10 +107,10 @@ section:nth-child(even) {
   transform: rotate(45deg);
 }
 #introduction {
-  padding-top: 8rem;
-  padding-right: 10rem;
-  padding-bottom: 8rem;
-  padding-left: 10rem;
+  padding: 8rem 10rem;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
 }
 .portfolio {
   margin-top: 3rem;
@@ -200,6 +198,123 @@ section:nth-child(even) {
   border-radius: 4px;
   font-size: 0.7rem;
 }
+#about-me {
+  flex-wrap: wrap;
+  padding: 2rem 2.5rem;
+}
+#about-me h2 {
+  font-size: 1.3rem;
+}
+.bio-skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.bio {
+  width: 100%;
+  padding: 20px;
+}
+.skills {
+  width: 100%;
+  padding: 20px;
+}
+.skill-list {
+  padding-top: 10px;
+}
+.skill-list svg {
+  /* position: relative; */
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.bio p {
+  font-size: 0.8rem;
+  margin-top: 15px;
+  padding-right: 50px;
+}
+.info-abt-me {
+  width: auto;
+  margin-inline: auto;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+.abt-content {
+  display: flex;
+  font-size: 0.9rem;
+}
+.abt-content .label {
+  flex-basis: 30%;
+  text-align: end;
+}
+.abt-content .value {
+  margin-left: 1.5rem;
+}
+.abt-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.education {
+  width: 50%;
+  padding: 20px;
+}
+.edu-timeline {
+  margin: 20px auto;
+  width: 80%;
+  border-left: 3px solid white;
+  padding: 0 20px 0 30px;
+}
+.edu-timeline div {
+  background-color: transparent;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: 3px solid white;
+  line-height: 1.6;
+  position: relative;
+  height: 15%;
+  margin-bottom: 10px;
+}
+div:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  position: absolute;
+  top: 10px;
+  left: -40px;
+}
+div:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+  border-width: 8px;
+  position: absolute;
+  left: -17px;
+  top: 10px;
+}
+.edu-timeline div a {
+  text-decoration: none;
+  margin: 0;
+  color: white;
+}
+.edu-timeline div h3 {
+  margin: 0;
+}
+.edu-timeline div h4 {
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.projects {
+  width: 100%;
+  padding: 20px;
+}
 @media (min-width: 900px) and (max-width: 1150px) {
   #introduction {
     padding-right: 4rem;
@@ -247,35 +362,17 @@ section:nth-child(even) {
     left: 0;
     width: 100%;
     padding: 0;
-    transition: 0.3s;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
-  .navbar .active {
+  .active {
     display: block;
     background: linear-gradient(
       90deg,
       rgba(7, 181, 227, 1) 0%,
       rgba(15, 53, 164, 1) 100%
     );
-    /* animation: slide-down 0.6s; */
+    transition: 1s ease-in-out;
   }
-  /* @keyframes slide-down {
-    from {
-      top: 60px;
-    }
-    to {
-      top: 70px;
-    }
-  }
-
-  @keyframes slide-up {
-    from {
-      top: 0;
-    }
-    to {
-      top: -70px;
-    }
-  } */
   .nav-links {
     height: 100%;
     flex-direction: column;
@@ -306,5 +403,8 @@ section:nth-child(even) {
 
   .information h1 {
     font-size: 1.7rem;
+  }
+  #about-me {
+    margin-top: 60px;
   }
 }
