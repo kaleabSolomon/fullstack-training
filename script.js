@@ -13,7 +13,7 @@ window.onload = function () {
       i++;
     } else {
       clearInterval(timer);
-      addCursor();
+      // addCursor();
     }
   }, 80);
 };
@@ -22,3 +22,9 @@ window.onload = function () {
 //   let cursor = document.querySelector(".cursor");
 //   cursor.style.display = "inline-block";
 // }
+// create drop down for the nav bar
+const hamburger = document.querySelector(".navbar-toggler-icon");
+hamburger.onclick = function () {
+  let nav = document.querySelector(".navbar-right");
+  nav.classList.toggle("active");
+};

@@ -5,6 +5,7 @@
   /* border: 1px solid; */
   font-family: "Montserrat", sans-serif;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -22,13 +23,16 @@
 .navbar .name {
   margin: 0;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inconsolata", sans-serif;
   color: white;
 }
 .navbar-right {
   width: 30%;
+}
+.nav-links {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -83,6 +87,26 @@ section:nth-child(even) {
     rgba(7, 181, 227, 1) 0%,
     rgba(15, 53, 164, 1) 100%
   );
+  z-index: 999;
+}
+.navbar-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navbar-toggler-icon {
+  font-size: 1.6rem;
+  color: white;
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out;
+  display: none;
+  border: none;
+}
+
+.navbar-toggler-icon:active {
+  transform: rotate(45deg);
 }
 #introduction {
   padding-top: 8rem;
@@ -92,8 +116,8 @@ section:nth-child(even) {
 }
 .portfolio {
   margin-top: 3rem;
-  width: 25%;
-  height: 85%;
+  width: 225px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +142,7 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
-  gap: 1.2rem;
+  gap: 1.1rem;
 }
 
 .information .attributes .att {
@@ -158,7 +182,7 @@ section:nth-child(even) {
   font-size: 2rem;
 }
 .information .description {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 /* to do: button hover  effects */
 .btns {
@@ -176,28 +200,26 @@ section:nth-child(even) {
   border-radius: 4px;
   font-size: 0.7rem;
 }
-@media (max-width: 1150px) {
+@media (min-width: 900px) and (max-width: 1150px) {
   #introduction {
     padding-right: 4rem;
     padding-left: 4rem;
   }
 }
-@media (min-width: 750px) and (max-width: 900px) {
+@media (min-width: 800px) and (max-width: 900px) {
   .navbar-right {
     width: 40%;
   }
-  .portfolio {
-    height: 60%;
+  #introduction {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
-  .att,
-  .description {
-    font-size: 0.9rem;
-  }
+
   .information h1 {
     font-size: 1.5rem;
   }
 }
-@media (min-width: 600px) and (max-width: 750px) {
+@media (min-width: 600px) and (max-width: 800px) {
   .navbar-right {
     width: 55%;
   }
@@ -207,5 +229,77 @@ section:nth-child(even) {
   }
   section {
     gap: 2rem;
+  }
+  .information h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-toggler-icon {
+    display: block;
+  }
+  .navbar-right {
+    display: none;
+    height: 100px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    transition: 0.3s;
+    border: 1px solid white;
+  }
+  .navbar .active {
+    display: block;
+    background: linear-gradient(
+      90deg,
+      rgba(7, 181, 227, 1) 0%,
+      rgba(15, 53, 164, 1) 100%
+    );
+    /* animation: slide-down 0.6s; */
+  }
+  /* @keyframes slide-down {
+    from {
+      top: 60px;
+    }
+    to {
+      top: 70px;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      top: 0;
+    }
+    to {
+      top: -70px;
+    }
+  } */
+  .nav-links {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  #introduction {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    gap: 1rem;
+  }
+  .portfolio {
+    width: 160px;
+    height: 180px;
+
+    margin: 0;
+  }
+  .att {
+    font-size: 0.9rem !important;
+  }
+  .information h1 {
+    font-size: 1.7rem;
   }
 }

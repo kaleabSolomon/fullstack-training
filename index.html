@@ -18,16 +18,29 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-left">
         <a class="name" href="#">Kaleab Solomon</a>
       </div>
+      <div class="navbar-toggler" id="navbar-toggler">
+        <button class="navbar-toggler-icon">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
+      </div>
       <div class="navbar-right">
-        <a class="nav-btn" href="#introduction">Home</a>
-        <a class="nav-btn" href="#about-me">About Me</a>
-        <a class="nav-btn" href="#contact-me">Contact</a>
+        <div class="nav-links">
+          <a class="nav-btn" href="#introduction">Home</a>
+          <a class="nav-btn" href="#about-me">About Me</a>
+          <a class="nav-btn" href="#contact-me">Contact</a>
+        </div>
       </div>
     </nav>
     <section id="introduction">
@@ -62,4 +75,8 @@
     <section id="contact-me">Section 3</section>
   </body>
   <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/eabc645910.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
