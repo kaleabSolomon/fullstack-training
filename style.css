@@ -289,16 +289,21 @@ section:nth-child(even) {
     height: 100%;
     padding: 0;
     gap: 1rem;
+    transform: translateY(70px);
+  }
+  .information {
+    padding: 16px 0;
   }
   .portfolio {
     width: 160px;
     height: 180px;
 
-    margin: 0;
+    margin: 1rem 0 0 0;
   }
   .att {
     font-size: 0.9rem !important;
   }
+
   .information h1 {
     font-size: 1.7rem;
   }
