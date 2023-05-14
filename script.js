@@ -13,15 +13,9 @@ window.onload = function () {
       i++;
     } else {
       clearInterval(timer);
-      // addCursor();
     }
   }, 80);
 };
-// create the cursor effect
-// function addCursor() {
-//   let cursor = document.querySelector(".cursor");
-//   cursor.style.display = "inline-block";
-// }
 // create drop down for the nav bar
 const hamburger = document.querySelector(".navbar-toggler-icon");
 hamburger.onclick = function () {

@@ -143,22 +143,6 @@ section {
     width: 100%;
   }
 }
-/* .cursor {
-  font-size: 1.3rem;
-  font-weight: bold;
-  opacity: 1;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  from,
-  to {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-} */
 .information h1 {
   font-size: 2rem;
 }
@@ -313,6 +297,7 @@ div:after {
   text-decoration: none;
   display: grid;
   place-items: center;
+  border-radius: 4px;
 }
 .project-list img {
   width: 90%;
@@ -340,7 +325,7 @@ div:after {
   color: white;
   opacity: 1;
 }
-.fa-greater-than {
+.project:hover .fa-greater-than {
   transition: 0.3s;
 }
 
@@ -382,6 +367,21 @@ textarea::placeholder {
 .submit {
   cursor: pointer;
   border: 3px solid white !important;
+}
+.socials i {
+  font-size: 25px;
+  margin: 10px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.socials i:hover {
+  transform: scale(1.2);
+}
+.footer {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid white;
 }
 @media (min-width: 900px) and (max-width: 1150px) {
   #introduction {
