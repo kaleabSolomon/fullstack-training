@@ -94,7 +94,9 @@
             </div>
             <div class="abt-content">
               <div class="label">Phone:</div>
-              <a href="tel:+251942102626" class="value">+251 942 102 626</a>
+              <a href="tel:+251942102626" target="_blank" class="value"
+                >+251 942 102 626</a
+              >
             </div>
             <div class="abt-content">
               <div class="label">Career choice:</div>
@@ -102,7 +104,10 @@
             </div>
             <div class="abt-content">
               <div class="label">Email:</div>
-              <a href="mailto:kaleabslmn@gmail.com" class="value"
+              <a
+                href="mailto:kaleabslmn@gmail.com"
+                target="_blank"
+                class="value"
                 >kaleabslmn@gmail.com</a
               >
             </div>
@@ -519,26 +524,30 @@
         <div class="edu-timeline">
           <div>
             <h3>Higher Education</h3>
-            <a href="https://bit.bdu.edu.et/"
+            <a href="https://bit.bdu.edu.et/" target="_blank"
               >Bahirdar Institute of Technology</a
             >
             <h4>2021 - present</h4>
           </div>
           <div>
             <h3>STEM Education</h3>
-            <a href="https://www.stempower.org/foka-stem-center"
+            <a href="https://www.stempower.org/foka-stem-center" target="_blank"
               >Foka Stem Center</a
             >
             <h4>2019 - 2020</h4>
           </div>
           <div>
             <h3>Secondary Education</h3>
-            <a href="https://www.abenezerschool.com/">Ebenezer School</a>
+            <a href="https://www.abenezerschool.com/" target="_blank"
+              >Abenezer Secondary School</a
+            >
             <h4>2017 - 2020</h4>
           </div>
           <div>
             <h3>Elementary Education</h3>
-            <a href="https://www.abenezerschool.com/">Ebenezer School</a>
+            <a href="https://www.abenezerschool.com/" target="_blank"
+              >Abenezer Primary School</a
+            >
             <h4>2009 - 2016</h4>
           </div>
         </div>
@@ -600,7 +609,31 @@
         </div>
       </div>
     </section>
-    <section id="contact-me">Section 3</section>
+    <section id="contact-me">
+      <h1>Get in Touch</h1>
+      <form action="" class="form">
+        <label for="name">Full Name</label>
+        <input placeholder="eg. John Doe" type="text" id="name" name="name" />
+        <label for="email">Email</label>
+        <input
+          placeholder="eg. JohnDoe@gmail.com"
+          type="email"
+          id="email"
+          name="email"
+        />
+        <label for="subject">Subject</label>
+        <input placeholder="subject" type="text" id="subject" name="subject" />
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input class="submit" type="submit" value="submit" />
+      </form>
+    </section>
   </body>
   <script src="script.js"></script>
   <script
