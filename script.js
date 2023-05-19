@@ -22,3 +22,28 @@ hamburger.onclick = function () {
   let nav = document.querySelector(".navbar-right");
   nav.classList.toggle("active");
 };
+const homeBtn = document.querySelector(".btn-home");
+const aboutBtn = document.querySelector(".btn-about");
+const contactBtn = document.querySelector(".btn-contact");
+
+const homeSection = document.getElementById("introduction");
+const aboutSection = document.getElementById("about-me");
+const contactSection = document.getElementById("contact-me");
+
+homeBtn.addEventListener("click", () => {
+  homeSection.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+aboutBtn.addEventListener("click", () => {
+  aboutSection.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+contactBtn.addEventListener("click", () => {
+  contactSection.scrollIntoView({
+    behavior: "smooth",
+  });
+});
